@@ -19,7 +19,7 @@ namespace Halloween
             InitializeComponent();
             this.Size = new Size(796, 489);
         }
-
+        // activate
         private void Form1_Click(object sender, EventArgs e)
         {
             int move = 0;
@@ -121,6 +121,7 @@ namespace Halloween
 
         private void Form1_Shown(object sender, EventArgs e)
         {
+            // start
             Graphics g = this.CreateGraphics();
             Font drawFont = new Font("Chiller", 30, FontStyle.Bold);
             SolidBrush whiteBrush = new SolidBrush(Color.White);
