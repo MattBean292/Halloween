@@ -32,7 +32,7 @@ namespace Halloween
             Pen blackPen = new Pen(Color.Black, 25);
             Pen orangePen = new Pen(Color.Orange, 25);
             Graphics g = this.CreateGraphics();
-
+            // angry pumpkin
             g.DrawArc(orangePen, 260, 275, 275, 75, 0, 180);
             g.TranslateTransform(545, 375);
             g.RotateTransform(180);
@@ -41,6 +41,7 @@ namespace Halloween
 
             for (int i = 0; i < 40; i++)
             {
+                // adds moving bones
                 player.Play();
                 Thread.Sleep(1);
                 g.Clear(Color.Black);
@@ -68,6 +69,7 @@ namespace Halloween
             }
             player.Stop();
             for (int i = 0; i < 38; i++)
+                // adds skull
             {
                 player.Play();
                 Thread.Sleep(1);
@@ -92,6 +94,7 @@ namespace Halloween
             }
             player.Stop();
             for (int i = 0; i < 30; i++)
+                // add text of "happy halloween"
             {
                 drawFont = new Font("Chiller", size, FontStyle.Bold);
 
@@ -128,7 +131,7 @@ namespace Halloween
             SolidBrush orangeBrush = new SolidBrush(Color.Orange);
             SolidBrush blackBrush = new SolidBrush(Color.Black);
             Pen blackPen = new Pen(Color.Black, 25);
-
+            // pumpkin
             g.Clear(Color.Black);
             g.FillEllipse(orangeBrush, 150, 50, 500, 350);
             g.FillPie(blackBrush, 250, 100, 150, 150, 180, 45);
